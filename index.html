@@ -22,23 +22,26 @@
 <!-- Split button -->
 
 <div class="container clearfix">
+
     <div class="col text-center bg-primary clearfix head">
         <div class="col-md-2 "><h3>Goods</h3></div>
         <div class="col-md-1 "><h3>Number</h3></div>
         <div class="col-md-2 "><h3>Start</h3></div>
         <div class="col-md-2 "><h3>End</h3></div>
-        <div class="col-md-2 "><h3>Ratio</h3></div>
+        <div class="col-md-1 "><h3>Ratio</h3></div>
+        <div class="col-md-2 "><h3>Formula</h3></div>
         <div class="col-md-1 "><h3>Result</h3></div>
-        <div class="col-md-2 "><h3>Action</h3></div>
+        <div class="col-md-1 "><h3>Action</h3></div>
     </div>
     <div class="col text-center clearfix head">
-        <div class="col-md-2"><select class="form-control" name="" id="Goods"></select></div>
-        <div class="col-md-1"><input type="text" class="form-control input-sm" name="" id="Number" /></div>
-        <div class="col-md-2"><select class="form-control input-sm" name="" id="Start" onchange="getRatio(this);"></select></div>
-        <div class="col-md-2"><select class="form-control input-sm" name="" id="End" onchange="getRatio(this);"></select></div>
-        <div class="col-md-2"><span id="Ratio"></span></div>
+        <div class="col-md-2"><select class="form-control" name="" id="Goods" onchange="getRatio();"></select></div>
+        <div class="col-md-1"><input type="text" class="form-control input-sm" name="" id="Number" onchange="getRatio();" /></div>
+        <div class="col-md-2"><select class="form-control input-sm" name="" id="Start" onchange="getRatio();"></select></div>
+        <div class="col-md-2"><select class="form-control input-sm" name="" id="End" onchange="getRatio();"></select></div>
+        <div class="col-md-1"><span id="Ratio"></span></div>
+        <div class="col-md-2"><span id="Formula"></span></div>
         <div class="col-md-1"><span id="Result"></span></div>
-        <div class="col-md-2">Action</div>
+        <div class="col-md-1"><a href="javascript:void(0);" class="glyphicon glyphicon-plus"></a></div>
     </div>
 </div>
 </body>
